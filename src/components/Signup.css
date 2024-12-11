@@ -1,0 +1,143 @@
+/* Container de la page d'inscription */
+.signup-page {
+    background-image: url('./photo.jpg'); /* Remplace par ton image */
+    background-size: cover;  /* L'image couvre toute la page */
+    background-position: center; /* Centrer l'image */
+    background-repeat: no-repeat; /* Éviter la répétition de l'image */
+    height: 100vh; /* Assurer que le fond couvre toute la hauteur de la fenêtre */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Formulaire d'inscription */
+  .signup-form {
+    max-width: 450px;
+    width: 100%;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.9); /* Fond semi-transparent */
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px); /* Effet flou pour une touche moderne */
+  }
+  
+  /* Titre */
+  .signup-form h2 {
+    text-align: center;
+    color: #2a7f62; /* Couleur verte apaisante pour un site de santé */
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  /* Groupes de champs du formulaire */
+  .input-group {
+    margin-bottom: 20px;
+  }
+  
+  /* Labels des champs */
+  .input-group label {
+    display: block;
+    font-weight: 600;
+    color: #4a4a4a; /* Gris doux pour les labels */
+    margin-bottom: 8px;
+  }
+  
+  /* Champs de saisie */
+  .input-group input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+  }
+  
+  /* Effet de focus sur les champs de saisie */
+  .input-group input:focus {
+    border-color: #2a7f62; /* Vert au focus */
+    box-shadow: 0 0 5px rgba(42, 127, 98, 0.6);
+  }
+  
+  /* Messages d'erreur */
+  .error {
+    color: #e74c3c; /* Rouge pour les erreurs */
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  
+  /* Messages de succès */
+  .success {
+    color: #2ecc71; /* Vert pour le succès */
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  
+  /* Bouton d'inscription */
+  .submit-btn {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    background-color: #2a7f62; /* Vert apaisant pour le bouton */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Effet au survol du bouton */
+  .submit-btn:hover {
+    background-color: #238e55;
+  }
+  
+  /* Bouton désactivé */
+  .submit-btn:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  /* Lien pour la redirection vers la page de connexion */
+  .login-link {
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  .login-link a {
+    color: #2a7f62;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .login-link a:hover {
+    text-decoration: underline;
+    color: #1a6b46;
+  }
+  
+  /* Responsive design pour petits écrans */
+  @media (max-width: 480px) {
+    .signup-form {
+      width: 90%;
+      padding: 20px;
+    }
+  
+    .signup-form h2 {
+      font-size: 24px;
+    }
+  
+    .input-group input {
+      font-size: 14px;
+    }
+  
+    .submit-btn {
+      font-size: 14px;
+    }
+  }
+  

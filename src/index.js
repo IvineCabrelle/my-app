@@ -1,17 +1,14 @@
+// index.js (ou index.tsx)
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
+import ReactDOM from 'react-dom/client';  // Importation de `createRoot`
 import App from './App';
-import reportWebVitals from './reportWebVitals';
 
+// Créez une racine avec `createRoot`
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+// Utilisation de `root.render` au lieu de `ReactDOM.render`
 root.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
