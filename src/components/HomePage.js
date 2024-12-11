@@ -13,7 +13,7 @@ const HomePage = () => {
   const handleMouseEnter = () => setIsHovered(true);
   const handleMouseLeave = () => setIsHovered(false);
   const monChat = () => {
-    window.location.href = 'http://localhost:3001'; 
+    window.location.href = 'http://localhost:3000'; 
   };
   const multi_modal = () => {
     window.location.href = 'http://localhost:1234'; 
